@@ -103,3 +103,10 @@ Additional Resource
 https://www.tensorflow.org/install/gpu
 
 
+Installing jupyter_contrib_nbextensions
+
+conda install -c conda-forge jupyter_contrib_nbextensions
+
+https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/install.html
+
+
