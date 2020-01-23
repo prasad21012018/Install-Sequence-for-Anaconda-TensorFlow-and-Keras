@@ -3,17 +3,37 @@
 1) Install Anaconda
 2) GoTo "Anaconda Prompt (Anaconda3)" with Admin rights
 3) Update Conda Environment by below command
+
      conda update -n base -c defaults conda
+     
 4) Install keras ( Install keras first before TensorFlow because if you reverse the order of installation of these two softwares then
    sometimes keras downgrade the installed files ( downgrades versions of installed files )
+   
      conda install -c conda-forge keras
+     
 5) Install TensorFlow 
+
      conda install -c anaconda tensorflow-gpu
      
 
-Check if tensorflow-gpu shows GPU list on Laptop
+Check if tensorflow-gpu shows GPU list available on your device eg. Laptop, Desktop
 
 Open Jupyter NoteBook -> New Python3 NoteBook file
+
+Check which version of TensorFlow and Keras are installed
+
+import tensorflow as tf
+from tensorflow.keras import layers
+
+print("TensorFlow Version : " + str(tf.__version__))
+print("Keras Version : " + str(tf.keras.__version__))
+
+Output :
+TensorFlow Version : 2.0.0
+Keras Version : 2.2.4-tf
+#==================================================================================================
+#==================================================================================================
+
 Enter below code in cell to check GPU is detected.
 
 Code 1 :
@@ -72,5 +92,8 @@ OutPut :
 ['/device:CPU:0', '/device:GPU:0']
 #==================================================================================================
 
+Additional Resources
+
+https://www.tensorflow.org/install/gpu
 
 
