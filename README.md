@@ -31,12 +31,18 @@ print("Keras Version : " + str(tf.keras.__version__))
 Output :
 TensorFlow Version : 2.0.0
 Keras Version : 2.2.4-tf
+
 #========================================================
-#========================================================
+
+
 Enter below code in cell to check GPU is detected.
 
-Code 1 :
+
+
 #========================================================
+
+Code 1 :
+
 # Ensure you have the latest TensorFlow gpu release installed.
 from __future__ import absolute_import, division, print_function, unicode_literals
 # from keras import backend as K
@@ -74,10 +80,10 @@ Device mapping:
 ---------------------------------------------
 [[22. 28.]
  [49. 64.]]
+ 
 #========================================================
 
 Code 2 :
-#========================================================
 
 from tensorflow.python.client import device_lib
 def get_available_devices():
@@ -89,6 +95,7 @@ print(get_available_devices())
 OutPut :
 
 ['/device:CPU:0', '/device:GPU:0']
+
 #========================================================
 
 Additional Resource
